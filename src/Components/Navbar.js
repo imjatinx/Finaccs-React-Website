@@ -14,13 +14,27 @@ import { GiHamburgerMenu } from 'react-icons/gi';
 export default function Navbar() {
   return (
     <>
-      <nav className="container-fluid px-5 position-absolute">
-        <div className='myNavbar'>
-          <div className='d-flex align-items-center'>
+      <nav className="container-fluid position-absolute border myNavbar">
+        <div className='row'>
+
+          <div className='col-xl-3 col-lg-4 col-md-3 col-sm-12 border toggleHandle'>
             <a href="/#">
               <img src={FCSLogo} alt="" className='logo' />
             </a>
 
+            {/* TOGGLE BUTTON STARTS */}
+
+            <input type="checkbox" id="check" />
+
+            <label htmlFor="#" className='hamburger'>
+              <GiHamburgerMenu style={{ fontSize: "30px", color: "white" }} />
+            </label>
+
+            {/* TOGGLE BUTTON ENDS */}
+          </div>
+
+
+          <div className="col-xl-9 col-lg-8 col-md-9 border menuBar">
             <ul className='menu'>
               <a href="/#" className='active'>
                 <li>HOME</li>
@@ -36,23 +50,13 @@ export default function Navbar() {
               </a>
             </ul>
 
-            {/* TOGGLE BUTTON STARTS */}
+            <div className='d-flex justify-content-center align-items-center'>
+              <button className='btn btn-primary '>CONTACT US</button>
+            </div>
 
-            <input type="checkbox" id="check" />
-            <label htmlFor="#" className='hamburger'>
-              <GiHamburgerMenu style={{fontSize: "30px", color: "white"}}/>
-            </label>
-            
-            {/* TOGGLE BUTTON ENDS */}
-
-          </div>
-          <div className="contact-us">
-            <button className='btn btn-primary '>CONTACT US</button>
           </div>
         </div>
       </nav>
-
-
     </>
   )
 }
