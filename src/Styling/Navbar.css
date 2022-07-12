@@ -49,6 +49,7 @@
 }
 
 .hamburger{
+    z-index: 999;
     display: none;
     cursor: pointer;
 }
@@ -97,11 +98,12 @@
         display: block;
         position: fixed;
         top: 0;
-        left: 0;
+        right: -50vw;
         height: 100vh;
-        width: 100vw;
+        width: 50vw;
         text-align: center;
         background: white;
+        padding: 75px 0;
     }
 
 }

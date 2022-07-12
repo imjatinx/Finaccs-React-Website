@@ -14,10 +14,10 @@ import { GiHamburgerMenu } from 'react-icons/gi';
 export default function Navbar() {
   return (
     <>
-      <nav className="container-fluid position-absolute border myNavbar">
+      <nav className="container-fluid position-absolute myNavbar">
         <div className='row'>
 
-          <div className='col-xl-3 col-lg-4 col-md-3 col-sm-12 border toggleHandle'>
+          <div className='col-xl-3 col-lg-4 col-md-3 col-sm-12 toggleHandle'>
             <a href="/#">
               <img src={FCSLogo} alt="" className='logo' />
             </a>
@@ -27,14 +27,14 @@ export default function Navbar() {
             <input type="checkbox" id="check" />
 
             <label htmlFor="#" className='hamburger'>
-              <GiHamburgerMenu style={{ fontSize: "30px", color: "white" }} />
+              <GiHamburgerMenu style={{ fontSize: "30px", color: "black" }} />
             </label>
 
             {/* TOGGLE BUTTON ENDS */}
           </div>
 
 
-          <div className="col-xl-9 col-lg-8 col-md-9 border menuBar">
+          <div className="col-xl-9 col-lg-8 col-md-9 menuBar">
             <ul className='menu'>
               <a href="/#" className='active'>
                 <li>HOME</li>
