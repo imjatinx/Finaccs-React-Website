@@ -17,23 +17,22 @@ export default function Navbar() {
       <nav className="container-fluid position-absolute myNavbar">
         <div className='row'>
 
-          <div className='col-xl-3 col-lg-4 col-md-3 col-sm-12 toggleHandle'>
+          {/* Logo div starts here */}
+          <div className='col-xl-3 col-lg-4 col-md-3 col-sm-9 col-9 toggleHandle'>
             <a href="/#">
               <img src={FCSLogo} alt="" className='logo' />
             </a>
-
-            {/* TOGGLE BUTTON STARTS */}
-
-            <input type="checkbox" id="check" />
-
-            <label htmlFor="#" className='hamburger'>
-              <GiHamburgerMenu style={{ fontSize: "30px", color: "black" }} />
-            </label>
-
-            {/* TOGGLE BUTTON ENDS */}
           </div>
+          {/* Logo div ends here */}
 
+          {/* TOGGLE BUTTON STARTS */}
+          <input type="checkbox" id="check" />
+          <label htmlFor="check" className='hamburger col-sm-3 col-3'>
+            <GiHamburgerMenu style={{ fontSize: "30px", color: "black" }} />
+          </label>
+          {/* TOGGLE BUTTON ENDS */}
 
+          {/* This is the div to be Toggle starts */}
           <div className="col-xl-9 col-lg-8 col-md-9 menuBar">
             <ul className='menu'>
               <a href="/#" className='active'>
@@ -49,12 +48,11 @@ export default function Navbar() {
                 <li>ABOUT US</li>
               </a>
             </ul>
-
             <div className='d-flex justify-content-center align-items-center'>
               <button className='btn btn-primary '>CONTACT US</button>
             </div>
-
           </div>
+          {/* This is the div to be Toggle starts */}
         </div>
       </nav>
     </>

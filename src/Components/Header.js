@@ -4,8 +4,8 @@ import "../Styling/Header.css"
 export default function Header() {
     return (
         <header>
-            <div class="area" >
-                <ul class="circles">
+            <div className="area" >
+                <ul className="circles">
                     <li></li>
                     <li></li>
                     <li></li>
