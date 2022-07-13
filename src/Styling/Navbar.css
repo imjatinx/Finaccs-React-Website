@@ -1,60 +1,76 @@
 @import url(Util.css);
 
-.myNavbar{
+.myNavbar {
     padding: 0rem 3rem;
     z-index: 99;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 0px 20px 0px;
 }
 
-.logo{
+.logo {
     width: 10rem;
     height: auto;
 }
 
-.toggleHandle{
+.toggleHandle {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.menuBar{
+.menuBar {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.menu{
+.menu {
     margin: 0px;
     display: flex;
     align-items: center;
 }
 
-.menu a{
+.menu .menuItems {
     text-decoration: none;
     color: black;
     margin: 0 10px;
     font-weight: 600;
 }
 
-.menu a:hover{
-    color: white;
+.menu .menuItems:hover {
+    color: var(--primary);
 }
 
-.menu .active{
-    border-bottom: 2px solid white;
-    color: white;
+.menu .active {
+    border-bottom: 2px solid var(--primary);
+    color: var(--primary);
 }
 
-.menu li{
+.contact_btn{
+    outline: 1px solid var(--primary);
+    transition: all 0.2s ease-in;
+}
+
+.contact_btn:hover{
+    color: var(--primary);
+    background: none;
+}
+
+/* .active_link {
+    border-bottom: 2px solid var(--primary);
+    color: var(--primary);
+} */
+
+.menu li {
     list-style: none;
 }
 
-.hamburger{
+.hamburger {
     z-index: 999;
     display: none;
     text-align: center;
     margin: auto 0;
     cursor: pointer;
-    color: white;
+    color: black;
     transition: color 0.2s ease-in;
 }
 
@@ -64,48 +80,48 @@
     color: black;
 } */
 
-#check{
+#check {
     display: none;
 }
 
 @media screen and (max-width: 820px) {
-    .myNavbar{
+    .myNavbar {
         padding: 0 1.5rem;
     }
 
-    .menuBar{
+    .menuBar {
         padding: 0;
     }
 
-    .menu a{
+    .menu .menuItems {
         margin: 0 8px;
     }
 }
 
 @media screen and (max-width: 767px) {
-    .hamburger{
+    .hamburger {
         display: block;
     }
 
-    .menu{
+    .menu {
         display: block;
         padding-left: 0;
     }
 
-    .menu a{
+    .menu .menuItems {
         color: black;
     }
-    
-    .menu a:hover{
-        color: #35629d;
+
+    .menu .active {
+        border-bottom: 2px solid var(--primary);
+        color: var(--primary);
     }
 
-    .menu .active{
-        border-bottom: 2px solid #35629d;
-        color: #35629d;
+    .menu .menuItems:hover {
+        color: var(--primary);
     }
 
-    .menuBar{
+    .menuBar {
         display: block;
         position: fixed;
         top: 0;
@@ -118,12 +134,12 @@
         transition: all 0.2s ease-out;
     }
 
-    #check:checked ~ .menuBar{
+    #check:checked~.menuBar {
         right: 0;
     }
 
-    #check:checked ~ .hamburger{
-        color: black;
+    #check:checked~.hamburger {
+        color: var(--primary);
     }
 
     /* #check:checked ~ .hamburger #hamIcon::before{
