@@ -9,6 +9,7 @@ import '../Styling/Util.css'
 // import { AiFillInstagram } from 'react-icons/ai';
 // import { AiFillTwitterCircle } from 'react-icons/ai';
 import { GiHamburgerMenu } from 'react-icons/gi';
+import { Link } from 'react-router-dom';
 
 
 export default function Navbar() {
@@ -28,14 +29,14 @@ export default function Navbar() {
           {/* TOGGLE BUTTON STARTS */}
           <input type="checkbox" id="check" />
           <label htmlFor="check" className='hamburger col-sm-3 col-3'>
-            <GiHamburgerMenu style={{ fontSize: "30px", color: "black" }} />
+            <GiHamburgerMenu id='hamIcon' style={{ fontSize: "30px" }} />
           </label>
           {/* TOGGLE BUTTON ENDS */}
 
           {/* This is the div to be Toggle starts */}
           <div className="col-xl-9 col-lg-8 col-md-9 menuBar">
             <ul className='menu'>
-              <a href="/#" className='active'>
+              <a href="/services" className='active'>
                 <li>HOME</li>
               </a>
               <a href="/#">
