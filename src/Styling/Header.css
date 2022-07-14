@@ -185,6 +185,8 @@ body{
 .exploreBtn{
     outline: 1px solid var(--primary);
     margin-bottom: 1.5rem;
+    padding: 10px 15px;
+    transition: all 0.2s ease-in;
 }
 
 .exploreBtn:hover{
@@ -314,6 +316,7 @@ body{
 
     .exploreBtn{
         margin-bottom: 1rem;
+        padding: 5px;
     }
 
     .hero_text_2{

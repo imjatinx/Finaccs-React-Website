@@ -48,6 +48,7 @@
 .contact_btn{
     outline: 1px solid var(--primary);
     transition: all 0.2s ease-in;
+    padding: 10px 15px;
 }
 
 .contact_btn:hover{
@@ -149,4 +150,10 @@
         transition: all 0.2s ease-in-out;
     } */
 
+}
+
+@media screen and (max-width: 450px) {
+    .contact_btn{
+        padding: 5px;
+    }
 }

@@ -20,7 +20,7 @@ export default function Header() {
                     <p>Finaccs provides quality financial advisory</p>
                     <p>services to businesses all over the World.</p>
                 </div>
-                <button className='btn btn-primary btn-sm exploreBtn'>Explore<AiOutlineArrowRight className='exploreIcon' /></button>
+                <button className='btn btn-primary exploreBtn'>Explore<AiOutlineArrowRight className='exploreIcon' /></button>
                 <div className="left_right_Icons">
                     <BsArrowLeftCircle className='leftIcon mr-3' /><BsArrowRightCircle className='rightIcon ml-3' />
                 </div>

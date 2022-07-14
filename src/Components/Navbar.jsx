@@ -2,14 +2,7 @@ import React from 'react'
 import FCSLogo from "../assets/Finaccs Logo.svg";
 import '../Styling/Navbar.css'
 import '../Styling/Util.css'
-// import { IoMdCall } from 'react-icons/io';
-// import { AiFillMail } from 'react-icons/ai';
-// import { MdFacebook } from 'react-icons/md';
-// import { AiFillLinkedin } from 'react-icons/ai';
-// import { AiFillInstagram } from 'react-icons/ai';
-// import { AiFillTwitterCircle } from 'react-icons/ai';
 import { GiHamburgerMenu } from 'react-icons/gi';
-// import { Link } from 'react-router-dom';
 import { NavLink } from 'react-router-dom';
 
 
@@ -52,7 +45,7 @@ export default function Navbar() {
               </NavLink>
             </ul>
             <div className='d-flex justify-content-center align-items-center'>
-              <button className='btn btn-primary btn-sm contact_btn'>CONTACT US</button>
+              <button className='btn btn-primary contact_btn'>CONTACT US</button>
             </div>
           </div>
           {/* This is the div to be Toggle starts */}
