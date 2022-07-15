@@ -1,3 +1,10 @@
 .appointment_form{
-    position: relative;
+    position: absolute;
+    width: 30vw;
+    right: 10%;
+    padding: 20px 25px;
+    top: 82%;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    background: transparent;
+    backdrop-filter: blur(10px);
 }

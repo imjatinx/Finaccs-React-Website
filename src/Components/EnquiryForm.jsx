@@ -21,6 +21,7 @@ export default function EnquiryForm() {
         </div>
         <button type="submit" className="btn btn-primary">SEND REQUEST</button>
       </form>
+      <hr style={{border: "1px solid black"}}/>
     </div>
   )
 }
