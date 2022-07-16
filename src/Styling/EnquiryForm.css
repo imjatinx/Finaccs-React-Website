@@ -1,10 +1,57 @@
 .appointment_form{
-    position: absolute;
-    width: 30vw;
-    right: 10%;
+    border-radius: 5px;
+    position: relative;
+    top: -12%;
+    width: 40vw;
     padding: 20px 25px;
-    top: 82%;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     background: transparent;
     backdrop-filter: blur(10px);
+}
+
+form h4, .presentation h4{
+    font-size: 25px;
+}
+
+label{
+    font-size: 17px;
+}
+
+.download_link{
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 991px) {
+    .appointment_form{
+        top: 0;
+        width: 100vw;
+        box-shadow: none;
+        backdrop-filter: none;
+    }
+}
+
+@media screen and (max-width: 690px) {
+    form h4, .presentation h4{
+        font-size: 20px;
+    }
+
+    label{
+        font-size: 15px;
+    }
+
+    .form-text{
+        font-size: 10px;
+        font-weight: bolder;
+    }
+
+    .presentation p, .presentation .download_link{
+        font-size: 15px;
+    }
+
+}
+
+@media screen and (max-width: 572px) {
+    .appointment_form{
+        padding: 20px 5px;
+    }
 }

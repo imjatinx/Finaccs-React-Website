@@ -53,6 +53,7 @@
 
 .leftIcon, .rightIcon{
     font-size: 35px;
+    cursor: pointer;
 }
 
 .hero_image_section{
