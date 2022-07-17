@@ -1,6 +1,9 @@
 import React from 'react'
 import '../Styling/ServicesSection.css'
-// import Service from '../assets/Service.jpg'
+import Registration from '../assets/6.jfif'
+import Tax from '../assets/7.jfif'
+import Audit from '../assets/3.jfif'
+import planning from '../assets/2.jfif'
 import EnquiryForm from '../Components/EnquiryForm'
 
 export default function ServicesSection() {
@@ -13,25 +16,33 @@ export default function ServicesSection() {
                 </div>
                 <div className="Service_item">
                     <div className="item">
+                        <img src={Registration} alt="" />
                         <div className="title_bar">
-                            <h6>GST Registration</h6>
+                            <h6>Tax Registration</h6>
+                            <p>Get the Registration in simple steps</p>
                         </div>
                     </div>
                     <div className="item">
+                        <img src={Tax} alt="" />
                         <div className="title_bar">
                             <h6>Tax Filing</h6>
+                            <p>Lorem ipsum dolor sit amet consectetur</p>
                         </div>
                     </div>
                 </div>
                 <div className="Service_item">
                     <div className="item">
+                        <img src={Audit} alt="" />
                         <div className="title_bar">
                             <h6>Audit Filing</h6>
+                            <p>Lorem ipsum dolor sit amet consectetur.</p>
                         </div>
                     </div>
                     <div className="item">
+                        <img src={planning} alt="" />
                         <div className="title_bar">
                             <h6>Financial Planning</h6>
+                            <p>Lorem ipsum dolor sit amet consectetur.</p>
                         </div>
                     </div>
                 </div>

@@ -10,7 +10,7 @@ export default function Navbar() {
 
   return (
     <>
-      <nav className="container-fluid position-relative myNavbar">
+      <nav className="container-fluid position-fixed myNavbar">
         <div className='row'>
 
           {/* Logo div starts here */}
