@@ -1,22 +1,22 @@
 import React from 'react'
 // Stylesheets
-import "../Styling/Animation.css"
+// import "../Styling/Animation.css"
 import "../Styling/Header.css"
 // Images
-// import Hero_image from '../assets/man_sitting_on_the_table.svg';
+import Hero_image from '../assets/Hero_image_3.png';
 // import Hero_image from '../assets/Hero_img.svg';
 // Icons
-import { AiOutlineArrowRight, AiOutlineLine } from 'react-icons/ai';
+import { AiOutlineArrowRight } from 'react-icons/ai';
 import { BsArrowLeftCircle, BsArrowRightCircle } from 'react-icons/bs';
 
 
 export default function Header() {
     return (
-        <header className='hero_section area'>
+        <header className='hero_section'>
             <div className='hero_text_section'>
                 <div className="hero_text_1 mb-lg-5 mb-md-4 mb-3">
                     <h1>BEST FINANCIAL <br /> SOLUTIONS</h1>
-                    <p><AiOutlineLine />For Your Business</p>
+                    {/* <p><AiOutlineLine />For Your Business</p> */}
                 </div>
                 <div className="hero_text_2">
                     <p>Finaccs provides quality financial advisory</p>
@@ -28,11 +28,11 @@ export default function Header() {
                 </div>
             </div>
             <div className="hero_image_section">
-                {/* <img src={Hero_image} alt="HeroImage" /> */}
+                <img className='' src={Hero_image} alt="HeroImage" />
             </div>
 
             {/* <div class="area" > */}
-                <ul class="circles">
+                {/* <ul class="circles">
                     <li></li>
                     <li></li>
                     <li></li>
@@ -43,7 +43,7 @@ export default function Header() {
                     <li></li>
                     <li></li>
                     <li></li>
-                </ul>
+                </ul> */}
             {/* </div > */}
 
         </header>

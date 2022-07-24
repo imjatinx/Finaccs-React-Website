@@ -1,10 +1,11 @@
 import React from 'react'
 import '../Styling/ServicesSection.css'
-import Registration from '../assets/6.jfif'
-import Tax from '../assets/7.jfif'
-import Audit from '../assets/3.jfif'
-import planning from '../assets/2.jfif'
+import Registration from '../assets/registration.jfif'
+import Tax from '../assets/tax.jfif'
+import Audit from '../assets/audit.jfif'
+import planning from '../assets/planning.jfif'
 import EnquiryForm from '../Components/EnquiryForm'
+import { Link } from 'react-router-dom'
 
 export default function ServicesSection() {
     return (
@@ -12,7 +13,7 @@ export default function ServicesSection() {
             <div className="col-lg-6 col-md-12 col-12 order-lg-1 order-md-2 order-2 Service_section">
                 <div className="heading d-flex align-items-center justify-content-between">
                     <h4>What We Offer</h4>
-                    <button className='btn btn-primary'>View All</button>
+                    <Link to='/services'><button className='btn btn-primary'>View All</button></Link>
                 </div>
                 <div className="Service_item">
                     <div className="item">
