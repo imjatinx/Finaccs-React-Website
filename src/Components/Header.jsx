@@ -1,10 +1,9 @@
 import React from 'react'
 // Stylesheets
-// import "../Styling/Animation.css"
 import "../Styling/Header.css"
 // Images
 import Hero_image from '../assets/Hero_image_3.png';
-// import Hero_image from '../assets/Hero_img.svg';
+import Typewriter from 'typewriter-effect';
 // Icons
 import { AiOutlineArrowRight } from 'react-icons/ai';
 import { BsArrowLeftCircle, BsArrowRightCircle } from 'react-icons/bs';
@@ -15,8 +14,25 @@ export default function Header() {
         <header className='hero_section'>
             <div className='hero_text_section'>
                 <div className="hero_text_1 mb-lg-5 mb-md-4 mb-3">
-                    <h1>BEST FINANCIAL <br /> SOLUTIONS</h1>
-                    {/* <p><AiOutlineLine />For Your Business</p> */}
+                    <h1 className='d-flex'>
+                        <span>
+                            WE PROVIDE&nbsp;
+                        </span>
+                        <span className='text-primary'>
+                            <Typewriter
+                                options={{
+                                    strings: ['PROFESSIONAL', 'VALUABLE', 'RELIABLE', 'BETTER'],
+                                    autoStart: true,
+                                    loop: true,
+                                }}
+                            />
+                        </span>
+                    </h1>
+                    <h1>
+                        <span>
+                            BUSINESS SOLUTIONS
+                        </span>
+                    </h1>
                 </div>
                 <div className="hero_text_2">
                     <p>Finaccs provides quality financial advisory</p>
@@ -30,22 +46,6 @@ export default function Header() {
             <div className="hero_image_section">
                 <img className='' src={Hero_image} alt="HeroImage" />
             </div>
-
-            {/* <div class="area" > */}
-                {/* <ul class="circles">
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul> */}
-            {/* </div > */}
-
         </header>
     )
 }

@@ -5,14 +5,12 @@ import '../Styling/Util.css'
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { NavLink } from 'react-router-dom';
 
-
 export default function Navbar() {
 
   return (
     <>
-      <nav className="container-fluid position-fixed myNavbar">
+      <nav className="container-fluid myNavbar">
         <div className='row'>
-
           {/* Logo div starts here */}
           <div className='col-xl-3 col-lg-4 col-md-3 col-sm-9 col-9 toggleHandle'>
             <NavLink to="/">
