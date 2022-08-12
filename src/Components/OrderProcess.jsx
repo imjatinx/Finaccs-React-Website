@@ -1,34 +1,41 @@
 import React from 'react'
 import '../Styling/OrderProcess.css'
-import { RiCustomerService2Fill } from 'react-icons/ri';
+import {BiChat} from 'react-icons/bi'
+import {TbTruckDelivery} from 'react-icons/tb'
+import {VscServerProcess} from 'react-icons/vsc'
+import {GrDocumentTxt} from 'react-icons/gr'
 
 export default function OrderProcess() {
-    return (
-        <section className='process_section'>
-            <div className="container-fluid h-100 w-100">
-                <div className="row order_card">
-                    <div className="col-3 order_card_items mx-auto bg-white">
-                        <div className='border border-dark text-center icons'>
-                            <span>
-                                <RiCustomerService2Fill />
-                            </span>
-                        </div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum doloremque quae odio maiores, accusantium neque!</p>
+  return (
+    <section>
+        <div className="container-fluid order_section">
+            <div className="row justify-content-center mx-auto">
+                <div className="order_blue col-lg-3 col-md-3 col-sm-6 mb-2 col-12">
+                    <div className="order_item">
+                        <div className="icon"><BiChat/></div>
+                        <div className="content">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe commodi ad provident.</div>
                     </div>
-                    <div className="col-3 order_card_items mx-auto bg-white">
-                        <div className='border border-dark'>
-                            <img src="" alt="" />
-                        </div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum doloremque quae odio maiores, accusantium neque!</p>
+                </div>
+                <div className="order_white col-lg-3 col-md-3 col-sm-6 mb-2 col-12">
+                    <div className="order_item">
+                        <div className="icon"><GrDocumentTxt/></div>
+                        <div className="content">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe commodi ad provident.</div>
                     </div>
-                    <div className="col-3 order_card_items mx-auto bg-white">
-                        <div className='border border-dark'>
-                            <img src="" alt="" />
-                        </div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos sit eum itaque saepe, facilis autem?</p>
+                </div>
+                <div className="order_blue col-lg-3 col-md-3 col-sm-6 mb-2 col-12">
+                    <div className="order_item">
+                        <div className="icon"><VscServerProcess/></div>
+                        <div className="content">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe commodi ad provident.</div>
+                    </div>
+                </div>
+                <div className="order_white col-lg-3 col-md-3 col-sm-6 mb-2 col-12">
+                    <div className="order_item">
+                        <div className="icon"><TbTruckDelivery/></div>
+                        <div className="content">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe commodi ad provident.</div>
                     </div>
                 </div>
             </div>
-        </section>
-    )
+        </div>
+    </section>
+  )
 }

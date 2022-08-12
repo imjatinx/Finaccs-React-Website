@@ -1,12 +1,7 @@
-@import url(Util.css);
-
 .myNavbar {
-    padding: 0rem 3rem;
+    /* padding: 0rem 3rem; */
     z-index: 9999999;
-    /* background-color: white; */
-    position: absolute;
-    /* height: 14vh; */
-    /* top: 0; */
+    background-color: white;
     /* box-shadow: rgba(0, 0, 0, 0.45) 0px 0px 20px 0px; */
 }
 
@@ -49,22 +44,6 @@
     color: var(--primary);
 }
 
-.contact_btn{
-    outline: 1px solid var(--primary);
-    transition: all 0.2s ease-in;
-    padding: 10px 15px;
-}
-
-.contact_btn:hover{
-    color: var(--primary);
-    background: none;
-}
-
-/* .active_link {
-    border-bottom: 2px solid var(--primary);
-    color: var(--primary);
-} */
-
 .menu li {
     list-style: none;
 }
@@ -78,12 +57,6 @@
     color: black;
     transition: color 0.2s ease-in;
 }
-
-/* .hamburger #hamIcon::before{
-    content: "";
-    font-size: 80px;
-    color: black;
-} */
 
 #check {
     display: none;
@@ -146,18 +119,5 @@
 
     #check:checked~.hamburger {
         color: var(--primary);
-    }
-
-    /* #check:checked ~ .hamburger #hamIcon::before{
-        content: "";
-        font: 30px;
-        transition: all 0.2s ease-in-out;
-    } */
-
-}
-
-@media screen and (max-width: 450px) {
-    .contact_btn{
-        padding: 5px;
     }
 }

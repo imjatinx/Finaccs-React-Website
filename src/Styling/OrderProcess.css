@@ -1,18 +1,19 @@
-.process_section{
-    width: 100%;
-    height: 280px;
-    border: 1px solid black;
+.order_section{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.order_white{
+    background: #dae2ec;
+    color: black;
+}
+
+.order_blue{
     background: var(--primary);
+    color: white;
 }
 
-.order_card{
-    height: 100%;
-    padding: 15px 0px;
-}
-
-.order_card span{
-    /* border: 1px solid black; */
-    border-radius: 50%;
-    padding: 0px 15px;
-    background-color: #d9d9d9;
+.order_item .icon{
+    text-align: center;
+    font-size: 30px;
 }

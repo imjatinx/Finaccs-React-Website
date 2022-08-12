@@ -2,25 +2,24 @@ import React from 'react'
 // Stylesheets
 import "../Styling/Header.css"
 // Images
-import Hero_image from '../assets/Hero_image_3.png';
+import Hero_image from '../assets/Hero_image_4.png';
 import Typewriter from 'typewriter-effect';
 // Icons
-// import { AiOutlineArrowRight } from 'react-icons/ai';
-// import { BsArrowLeftCircle, BsArrowRightCircle } from 'react-icons/bs';
-
+import { AiOutlineArrowRight } from 'react-icons/ai';
 
 export default function Header() {
+
     return (
-        <header className='hero_Section'>
-            <div className="container">
+        <header>
+            <div className="container-fluid hero_section">
                 <div className="row">
-                    <div className='col-6 mx-auto'>
-                        <div className="">
-                            <h1 className=''>
+                    <div className='hero_text_section col-12 col-md-6'>
+                        <div className="hero_text_1 mb-lg-5 mb-md-4 mb-3">
+                            <h1>
                                 <span>
-                                    WE PROVIDE&nbsp;
+                                    WE MAKE BUSINESS&nbsp;
                                 </span>
-                                {/* <span className='text-black'> */}
+                                <span className='text-primary'>
                                     <Typewriter
                                         options={{
                                             strings: ['PROFESSIONAL', 'VALUABLE', 'RELIABLE', 'BETTER'],
@@ -28,25 +27,19 @@ export default function Header() {
                                             loop: true,
                                         }}
                                     />
-                                {/* </span> */}
-                            </h1>
-                            <h1 className=''>
-                                <span>
-                                    BUSINESS SOLUTIONS
                                 </span>
                             </h1>
                         </div>
-                        <div className="">
-                            <p>Finaccs provides quality financial advisory services to businesses all over the World.</p>
+                        <div className="hero_text_2">
+                            <p>Finaccs provides quality financial advisory services to businesses all over the World. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus facere.</p>
                         </div>
-                        <div className=''>
-                            <button className='btn btn-primary'>
-                                Read More
-                            </button>
-                            <button className=' btn btn-primary ml-3'>
-                                Get Started!
-                            </button>
+                        <div>
+                            <button className='btnlg'>Read More<AiOutlineArrowRight className='exploreIcon' /></button>
+                            <button className='btnlg ml-3'>Explore<AiOutlineArrowRight className='exploreIcon' /></button>
                         </div>
+                    </div>
+                    <div className="hero_image_section col-12 col-md-6">
+                        <img className='' src={Hero_image} alt="HeroImage" />
                     </div>
                 </div>
             </div>
