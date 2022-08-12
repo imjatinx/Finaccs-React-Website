@@ -9,16 +9,28 @@ export default function EnquiryForm() {
         <h4>Make an appointment</h4>
         <div className="mb-2">
           <label htmlFor="name" className="form-label">Name</label>
-          <input type="name" className="form-control" required/>
+          <input
+            type="name"
+            className="form-control"
+            required
+            autocomplete="off" />
         </div>
         <div className="mb-2">
           <label htmlFor="email" className="form-label">Email address</label>
-          <input type="email" className="form-control" required/>
+          <input
+            type="email"
+            className="form-control"
+            required
+            autocomplete="off" />
           <div className="form-text">We'll never share your email with anyone else.</div>
         </div>
         <div className="mb-2">
           <label htmlFor="phone" className="form-label">Phone</label>
-          <input type="phone" className="form-control" required/>
+          <input
+            type="phone"
+            className="form-control"
+            required
+            autocomplete="off" />
         </div>
         <button type="submit" className="btn btn-primary">SEND REQUEST</button>
         <hr style={{ border: "1px solid black" }} />

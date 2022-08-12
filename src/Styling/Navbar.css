@@ -2,11 +2,12 @@
 
 .myNavbar {
     padding: 0rem 3rem;
-    z-index: 999;
-    background-color: white;
+    z-index: 9999999;
+    /* background-color: white; */
+    position: absolute;
     /* height: 14vh; */
-    top: 0;
-    box-shadow: rgba(0, 0, 0, 0.45) 0px 0px 20px 0px;
+    /* top: 0; */
+    /* box-shadow: rgba(0, 0, 0, 0.45) 0px 0px 20px 0px; */
 }
 
 .logo {
