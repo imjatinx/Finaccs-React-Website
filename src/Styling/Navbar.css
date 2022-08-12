@@ -17,6 +17,7 @@
 }
 
 .menuBar {
+    z-index: 999;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -49,7 +50,7 @@
 }
 
 .hamburger {
-    z-index: 999;
+    z-index: 9999;
     display: none;
     text-align: center;
     margin: auto 0;
