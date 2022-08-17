@@ -1,6 +1,9 @@
+.services{
+    background: transparent;
+}
+
 .Service_section{
     user-select: none;
-    
 }
 
 .heading {
@@ -11,17 +14,6 @@
     font-size: 25px;
     margin: 0;
     font-weight: bold;
-}
-
-.heading button{
-    padding: 10px 15px;
-    outline: 1px solid var(--primary);
-    transition: all 0.2s ease-in;
-}
-
-.heading button:hover{
-    color: var(--primary);
-    background: none;
 }
 
 .Service_item {

@@ -12,14 +12,14 @@ export default function Header() {
     return (
         <header>
             <div className="container-fluid hero_section">
-                <div className="row">
+                <div className="row align-items-center">
                     <div className='hero_text_section col-12 col-md-6'>
                         <div className="hero_text_1 mb-lg-5 mb-md-4 mb-3">
                             <h1>
                                 <span>
                                     WE MAKE BUSINESS&nbsp;
                                 </span>
-                                <span className='text-primary'>
+                                <span>
                                     <Typewriter
                                         options={{
                                             strings: ['PROFESSIONAL', 'VALUABLE', 'RELIABLE', 'BETTER'],

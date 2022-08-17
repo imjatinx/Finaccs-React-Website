@@ -9,11 +9,11 @@ import { Link } from 'react-router-dom'
 
 export default function ServicesSection() {
     return (
-        <div className='row mx-auto py-3'>
+        <div className='services row mx-auto py-3'>
             <div className="col-lg-6 col-md-12 col-12 order-lg-1 order-md-2 order-2 Service_section">
                 <div className="heading d-flex align-items-center justify-content-between">
                     <h4>What We Offer</h4>
-                    <Link to='/services'><button className='btn btn-primary'>View All</button></Link>
+                    <Link to='/services'><button className='btnsm'>View All</button></Link>
                 </div>
                 <div className="Service_item">
                     <div className="item">

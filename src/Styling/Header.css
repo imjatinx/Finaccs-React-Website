@@ -1,6 +1,12 @@
+header{
+    background-image: url('../assets/hero-bg.svg');
+    background-position: center top;
+    background-repeat: no-repeat;
+    padding-bottom: 285px;
+}
+
 .hero_text_section{
-    padding-top: 80px;
-    padding-bottom: 50px;
+    padding-top: 50px;
 }
 
 .hero_image_section img{
@@ -11,10 +17,15 @@
 .hero_text_1 h1{
     font-weight: bold;
     font-size: 40px;
+    color: white;
+}
+
+.hero_text_2 p{
+    color: white;
 }
 
 .btnlg{
-    border: 2px solid var(--primary);
+    border: 2px solid #526ffa;
     padding: 12px 22px;
     border-radius: 7px;
     background-color: white;
@@ -22,12 +33,13 @@
 }
 
 .btnlg:hover{
-    background-color: var(--primary);
+    border: 2px solid white;
+    background-color: #526ffa;
     color: white;
 }
 
 .btnsm{
-    border: 2px solid var(--primary);
+    border: 2px solid #526ffa;
     padding: 8px 18px;
     border-radius: 7px;
     background-color: white;
@@ -35,12 +47,18 @@
 }
 
 .btnsm:hover{
-    background-color: var(--primary);
+    background-color: #526ffa;
     color: white;
 }
 
 @media screen and (max-width : 999px) {
     .hero_text_1 h1{
         font-size: 30px;
+    }
+}
+
+@media screen and (max-width : 765px) {
+    header{
+        padding-bottom: 0px;
     }
 }

@@ -43,7 +43,7 @@ export default function Navbar() {
               </NavLink>
             </ul>
             <div className='d-flex justify-content-center align-items-center'>
-              <button className='btnlg contact_btn'>CONTACT US</button>
+              <button className='btnlg'>CONTACT US</button>
             </div>
           </div>
           {/* This is the div to be Toggle starts */}

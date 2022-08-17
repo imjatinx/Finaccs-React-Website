@@ -9,11 +9,16 @@
 }
 
 .order_blue{
-    background: var(--primary);
+    background: #526ffa;
     color: white;
+}
+
+.order_item{
+    padding: 20px 10px;
+    cursor: pointer;
 }
 
 .order_item .icon{
     text-align: center;
-    font-size: 30px;
+    font-size: 45px;
 }

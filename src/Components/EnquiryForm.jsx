@@ -32,7 +32,7 @@ export default function EnquiryForm() {
             required
             autocomplete="off" />
         </div>
-        <button type="submit" className="btn btn-primary">SEND REQUEST</button>
+        <button type="submit" className="btnlg">SEND REQUEST</button>
         <hr style={{ border: "1px solid black" }} />
       </form>
       <div className='col-lg-12 col-md-6 col-sm-6 col-xs-12 presentation'>

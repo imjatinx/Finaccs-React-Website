@@ -2,7 +2,7 @@
     /* padding: 0rem 3rem; */
     z-index: 9999999;
     background-color: white;
-    /* box-shadow: rgba(0, 0, 0, 0.45) 0px 0px 20px 0px; */
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 0px 20px 0px;
 }
 
 .logo {
@@ -37,12 +37,12 @@
 }
 
 .menu .menuItems:hover {
-    color: var(--primary);
+    color: #526ffa;
 }
 
 .menu .active {
-    border-bottom: 2px solid var(--primary);
-    color: var(--primary);
+    border-bottom: 2px solid #526ffa;
+    color: #526ffa;
 }
 
 .menu li {
