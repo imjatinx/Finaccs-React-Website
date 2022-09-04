@@ -13,7 +13,7 @@ export default function Header() {
         <header>
             <div className="container-fluid hero_section">
                 <div className="row align-items-center">
-                    <div className='hero_text_section col-12 col-md-6'>
+                    <div className='hero_text_section col-12 pb-5 col-md-6'>
                         <div className="hero_text_1 mb-lg-5 mb-md-4 mb-3">
                             <h1>
                                 <span>
@@ -38,7 +38,7 @@ export default function Header() {
                             <button className='btnlg ml-3'>Explore<AiOutlineArrowRight className='exploreIcon' /></button>
                         </div>
                     </div>
-                    <div className="hero_image_section col-12 col-md-6">
+                    <div className="hero_image_section d-none d-md-block col-md-6">
                         <img className='' src={Hero_image} alt="HeroImage" />
                     </div>
                 </div>

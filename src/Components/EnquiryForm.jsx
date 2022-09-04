@@ -1,8 +1,16 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { jsPDF } from "jspdf";
 import '../Styling/EnquiryForm.css'
 
 export default function EnquiryForm() {
+
+  const generatePDF = () => {
+    const doc = new jsPDF()
+    doc.text(50, 50, "Thank You...");
+    doc.save("Finaccs.pdf")
+  }
+
   return (
     <div className='row appointment_form'>
       <form className='col-lg-12 col-md-6 col-sm-6 col-xs-12'>
@@ -13,7 +21,7 @@ export default function EnquiryForm() {
             type="name"
             className="form-control"
             required
-            autocomplete="off" />
+            autoComplete="off" />
         </div>
         <div className="mb-2">
           <label htmlFor="email" className="form-label">Email address</label>
@@ -21,7 +29,7 @@ export default function EnquiryForm() {
             type="email"
             className="form-control"
             required
-            autocomplete="off" />
+            autoComplete="off" />
           <div className="form-text">We'll never share your email with anyone else.</div>
         </div>
         <div className="mb-2">
@@ -30,7 +38,7 @@ export default function EnquiryForm() {
             type="phone"
             className="form-control"
             required
-            autocomplete="off" />
+            autoComplete="off" />
         </div>
         <button type="submit" className="btnlg">SEND REQUEST</button>
         <hr style={{ border: "1px solid black" }} />
@@ -38,7 +46,7 @@ export default function EnquiryForm() {
       <div className='col-lg-12 col-md-6 col-sm-6 col-xs-12 presentation'>
         <h4>Company Presentation</h4>
         <p className='text-muted'>Check this to know more about us </p>
-        <Link className='download_link' to='#'>Download & Watch</Link>
+        <Link className='download_link' to='#' onClick={generatePDF}>Download & Watch</Link>
       </div>
     </div>
   )

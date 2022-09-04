@@ -9,7 +9,7 @@ export default function Navbar() {
 
   return (
     <>
-      <nav className="container-fluid myNavbar">
+      <nav className="container-fluid myNavbar" id='top'>
         <div className='row'>
           {/* Logo div starts here */}
           <div className='col-xl-3 col-lg-4 col-md-3 col-sm-9 col-9 toggleHandle'>
