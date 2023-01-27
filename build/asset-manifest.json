@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/static/css/main.233a40fa.css",
+    "main.js": "/static/js/main.89a0bb77.js",
+    "static/js/498.f5c7f4eb.chunk.js": "/static/js/498.f5c7f4eb.chunk.js",
+    "static/js/703.caf5a492.chunk.js": "/static/js/703.caf5a492.chunk.js",
+    "static/js/262.6e998f01.chunk.js": "/static/js/262.6e998f01.chunk.js",
+    "static/js/787.21d2df58.chunk.js": "/static/js/787.21d2df58.chunk.js",
+    "static/media/Hero_image_4.png": "/static/media/Hero_image_4.3d281cd2400e39b16a77.png",
+    "static/media/Finaccs Logo.svg": "/static/media/Finaccs Logo.2aa8ec2e34296017cf1e60998543791e.svg",
+    "static/media/404.svg": "/static/media/404.bdf1c60c297dc6528f56fe6a382dacdf.svg",
+    "static/media/registration.jfif": "/static/media/registration.f49cffdbf0bb4c9b4a85.jfif",
+    "static/media/tax.jfif": "/static/media/tax.d391d959c3186dc45c59.jfif",
+    "static/media/audit.jfif": "/static/media/audit.66723446bbe7cf17fab1.jfif",
+    "static/media/planning.jfif": "/static/media/planning.2d291d724bc1c1a96cc4.jfif",
+    "index.html": "/index.html",
+    "static/media/hero-bg.svg": "/static/media/hero-bg.52c52e0097dbc5076882.svg",
+    "main.233a40fa.css.map": "/static/css/main.233a40fa.css.map",
+    "main.89a0bb77.js.map": "/static/js/main.89a0bb77.js.map",
+    "498.f5c7f4eb.chunk.js.map": "/static/js/498.f5c7f4eb.chunk.js.map",
+    "703.caf5a492.chunk.js.map": "/static/js/703.caf5a492.chunk.js.map",
+    "262.6e998f01.chunk.js.map": "/static/js/262.6e998f01.chunk.js.map",
+    "787.21d2df58.chunk.js.map": "/static/js/787.21d2df58.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.233a40fa.css",
+    "static/js/main.89a0bb77.js"
+  ]
+}
